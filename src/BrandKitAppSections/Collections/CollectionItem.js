@@ -13,7 +13,7 @@ const CollectionItem = memo((props) => {
 
     return (
         <div className="brand-kit-collection">
-            <button className="delete-item" onClick={() => dispatch(updateBoard({ID}))}>X</button>
+            <button className="delete-item" onClick={() => dispatch(updateBoard(ID))}>X</button>
         </div>
     )
 })

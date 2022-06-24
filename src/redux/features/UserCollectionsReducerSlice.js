@@ -5,7 +5,7 @@ export const usersCollectionsReducer = (state = [], action) => {
     return [...state, collectionsItemReducer(undefined, action)];
   }
   if(action.type === 'DELETE_ITEM'){
-    return state.filter((item) => item.id !== action.payload.id)
+    return state.filter(item => item.id !== action.payload.id)
   }
 
   return state;
@@ -19,7 +19,7 @@ export const updateBoard = (updatedValues) => {
   return {
     type: 'DELETE_ITEM',
     payload: {
-      id: updatedValues.id,
+      id: updatedValues,
     },
   };
 }
