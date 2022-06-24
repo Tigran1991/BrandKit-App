@@ -9,10 +9,11 @@ const CollectionItem = memo((props) => {
 
     const dispatch = useDispatch();
 
-    const ID = props.id
+    const ID = props.id;
+    const IMAGE = props.image;
 
     return (
-        <div className="brand-kit-collection">
+        <div className="brand-kit-collection" >
             <button className="delete-item" onClick={() => dispatch(addCollectionData(ID))}>X</button>
         </div>
     )

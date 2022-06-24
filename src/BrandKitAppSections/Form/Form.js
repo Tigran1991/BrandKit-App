@@ -6,8 +6,6 @@ import AddLogo from './FormItems/AddLogo';
 import AddFonts from "./FormItems/AddFonts";
 import AddColors from './FormItems/AddColors';
 import { selectedItem } from "../../redux/features/ItemReducerSlice";
-import { selectedCollectionStorageState } from "../../redux/features/CollectionStorageReducerSlice";
-
 import { generateId } from '../../utils';
 
 const Form = () => {
@@ -16,6 +14,7 @@ const Form = () => {
 
   return (
     <div className="brand-kit">
+
       <AddLogo />
       <AddFonts />
       <AddColors />
@@ -23,7 +22,8 @@ const Form = () => {
       <div className="save-brand-kit">
         <button className="save-brand-kit-btn" onClick={() => dispatch(selectedItem({
           id: generateId(),
-        }), dispatch(selectedCollectionStorageState(true)))}> Save </button>
+          image: 'Tesla_Motors.png',
+        }))}> Save </button>
       </div>
       
     </div>

@@ -8,7 +8,7 @@ const UsersCollectionStorage = memo((props) => {
     return (
         <div className="users-brand-kit-board">
             {props.collections.map(brandKits => {
-                return <CollectionItem id={brandKits.id} key={brandKits.id}/>
+                return <CollectionItem id={brandKits.id} image={brandKits.image} key={brandKits.id}/>
             })}
         </div>
     )

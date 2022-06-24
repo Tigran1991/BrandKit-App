@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Anek+Latin&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anek+Latin&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -20,14 +20,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: 'Anek Latin', sans-serif;
+  font-family: "Anek Latin", sans-serif;
   width: 90%;
   height: 100%;
   border: 1px solid rgb(168, 165, 165);
-  background-color: #333
+  background-color: #333;
 }
 
-.add-brand-kit-btn{
+.add-brand-kit-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,13 +39,13 @@
   border-radius: 3px;
   margin: 4px 0px 0px 0px;
   text-align: center;
-  transition: .3ms linear;
-  font-family: 'Anek Latin', sans-serif;
+  transition: 0.3ms linear;
+  font-family: "Anek Latin", sans-serif;
   font-size: 16px;
   color: #fff;
 }
 
-.save-brand-kit-btn{
+.save-brand-kit-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,18 +56,18 @@
   border: 0px;
   border-radius: 3px;
   text-align: center;
-  transition: .3ms linear;
-  font-family: 'Anek Latin', sans-serif;
+  transition: 0.3ms linear;
+  font-family: "Anek Latin", sans-serif;
   font-size: 16px;
   color: #fff;
   margin-bottom: 20px;
 }
 
-button:hover{
+button:hover {
   background-color: rgb(139, 139, 216);
 }
 
-.brand-kit{
+.brand-kit {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,7 +76,7 @@ button:hover{
   height: 60%;
 }
 
-.added-brand-kit-board{
+.added-brand-kit-board {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,7 +85,7 @@ button:hover{
   height: 30vh;
 }
 
-.logo{
+.logo {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -95,7 +95,30 @@ button:hover{
   border-radius: 3px;
 }
 
-.color{
+.selected-image {
+  display: flex;
+}
+
+.added-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+  border: 0px;
+  border-radius: 3px;
+  margin-left: 9px;
+  margin: 10px 0px 10px 0px;
+  border: 1px solid #968f8f;
+  background-color: #fff;
+  border-radius: 3px;
+  background: url(/images/Tesla_Motors.png);
+  background-size: cover;
+  background-color: #fff;
+}
+
+.color {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -105,7 +128,28 @@ button:hover{
   border-radius: 3px;
 }
 
-.font{
+.selected-color {
+  display: flex;
+}
+
+.added-color {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+  border: 0px;
+  border-radius: 3px;
+  margin-left: 9px;
+  margin: 10px 0px 10px 0px;
+  border: 1px solid #968f8f;
+  background-color: rgb(120, 187, 89);
+  border-radius: 3px;
+  background-size: cover;
+}
+
+.font {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -115,7 +159,29 @@ button:hover{
   border-radius: 3px;
 }
 
-.add-brand-logo{
+.selected-font {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 180px;
+}
+
+.added-font {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+  border: 0px;
+  border-radius: 3px;
+  margin-left: 9px;
+  margin: 10px 0px 10px 0px;
+  border-radius: 3px;
+  background-size: cover;
+}
+
+.add-brand-logo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -131,7 +197,7 @@ button:hover{
   border-radius: 3px;
 }
 
-.add-brand-color{
+.add-brand-color {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -143,25 +209,29 @@ button:hover{
   margin-left: 9px;
   margin: 10px 0px 10px 0px;
   border: 1px solid #968f8f;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   border-radius: 3px;
 }
 
-.add-brand-kit-item-btn{
-  width: 90px;
-  height: 30px;
+.add-font-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 43px;
   cursor: pointer;
   background-color: rgb(81, 81, 228);
   border: 0px;
   border-radius: 3px;
-  margin-left: 9px;
-  margin: 10px 0px 10px 0px;
-  font-family: 'Anek Latin', sans-serif;
+  font-family: "Anek Latin", sans-serif;
   font-size: 16px;
   color: #fff;
+  background: url(/images/pen.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.plus{
+.plus {
   display: flex;
   width: 40px;
   height: 40px;
@@ -170,27 +240,27 @@ button:hover{
   cursor: pointer;
 }
 
-.empty-brand-kit-board{
+.empty-brand-kit-board {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
   color: #fff;
-  font-family: 'Anek Latin', sans-serif;
+  font-family: "Anek Latin", sans-serif;
 }
 
-.users-brand-kit-board{
+.users-brand-kit-board {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 100%;
   color: #fff;
-  font-family: 'Anek Latin', sans-serif;
+  font-family: "Anek Latin", sans-serif;
 }
 
-.brand-kit-collection{
+.brand-kit-collection {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -202,14 +272,18 @@ button:hover{
   cursor: pointer;
   border-radius: 4px;
   background-color: #968f8f;
-  transition: .3s linear;
+  transition: 0.3s linear;
+  background: url("/images/Tesla_Motors.png");
+  background-size: cover;
+  background-color: #fff;
+  background-position: inherit;
 }
 
-.brand-kit-collection:hover{
+.brand-kit-collection:hover {
   background-color: #6d6565;
 }
 
-.delete-item{
+.delete-item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -220,13 +294,13 @@ button:hover{
   top: 0px;
   right: 0px;
   background-color: #968f8f;
-  transition: .3s linear;
+  transition: 0.3s linear;
   cursor: pointer;
   border: none;
   color: #fff;
 }
 
-.delete-item:hover{
+.delete-item:hover {
   background-color: red;
   font-size: 14px;
 }

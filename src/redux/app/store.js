@@ -7,12 +7,12 @@ import { usersCollectionsReducer } from "../features/UserCollectionsReducerSlice
 const store = createStore(
   combineReducers({
     brandKitApp: brandKitAppReducer,
-    collectionStorage: collectionStorageReducer,
+    // collectionStorage: collectionStorageReducer,
     collections: usersCollectionsReducer,
   }),
   {
     brandKitApp: initialApp,
-    collectionStorage: initialStorageState,
+    // collectionStorage: initialStorageState,
   },
   composeWithDevTools()
 );

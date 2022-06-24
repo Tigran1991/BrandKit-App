@@ -3,6 +3,7 @@ export const collectionsItemReducer = (state={}, action) => {
       return {
         ...state,
         id: action.payload.id,
+        image: action.payload.image,
       };
     }
   
@@ -14,6 +15,7 @@ export const collectionsItemReducer = (state={}, action) => {
       type: "ADD_COLLECTION",
       payload: {
         id: itemData.id,
+        image: itemData.image,
       },
     };
   }

@@ -11,19 +11,19 @@ const BrandKitApp = () => {
 
   const dispatch = useDispatch();
 
-  const BOARD = useSelector(selectBrandKitAppState);
+  const BRAND_KIT_APP = useSelector(selectBrandKitAppState);
 
   return (
     <div className="brand-kit-board">
 
-      {!BOARD &&
+      {!BRAND_KIT_APP &&
         <button
           className="add-brand-kit-btn"
           onClick={() => dispatch(appSelectedState(true))}
         > Add Brand Kit </button>
       }
 
-      {BOARD && 
+      {BRAND_KIT_APP && 
       <>
         <Form />
         <CollectionStorage />

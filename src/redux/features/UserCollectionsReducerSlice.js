@@ -15,11 +15,11 @@ export const selectedCollections = (state) => {
   return state.collections;
 }
 
-export const addCollectionData = (collectionData) => {
+export const addCollectionData = (collectionId) => {
   return {
     type: 'DELETE_ITEM',
     payload: {
-      id: collectionData,
+      id: collectionId,
     },
   };
 }
