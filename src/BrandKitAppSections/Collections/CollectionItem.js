@@ -3,7 +3,7 @@ import { memo } from "react";
 import { useDispatch } from "react-redux";
 
 import '../../App.css';
-import { updateBoard } from "../../redux/features/UserCollectionsReducerSlice";
+import { addCollectionData } from "../../redux/features/UserCollectionsReducerSlice";
 
 const CollectionItem = memo((props) => {
 
@@ -13,7 +13,7 @@ const CollectionItem = memo((props) => {
 
     return (
         <div className="brand-kit-collection">
-            <button className="delete-item" onClick={() => dispatch(updateBoard(ID))}>X</button>
+            <button className="delete-item" onClick={() => dispatch(addCollectionData(ID))}>X</button>
         </div>
     )
 })

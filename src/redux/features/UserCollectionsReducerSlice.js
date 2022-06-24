@@ -15,11 +15,11 @@ export const selectedCollections = (state) => {
   return state.collections;
 }
 
-export const updateBoard = (updatedValues) => {
+export const addCollectionData = (collectionData) => {
   return {
     type: 'DELETE_ITEM',
     payload: {
-      id: updatedValues,
+      id: collectionData,
     },
   };
 }
