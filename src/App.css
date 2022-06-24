@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.brand-kit-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Anek Latin', sans-serif;
+  width: 90%;
+  height: 100%;
+  border: 1px solid rgb(168, 165, 165);
+  background-color: #333
+}
+
+.add-brand-kit-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  background-color: rgb(81, 81, 228);
+  border: 0px;
+  border-radius: 3px;
+  margin: 4px 0px 0px 0px;
+  text-align: center;
+  transition: .3ms linear;
+  font-family: 'Anek Latin', sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+
+.save-brand-kit-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  background-color: rgb(81, 81, 228);
+  border: 0px;
+  border-radius: 3px;
+  text-align: center;
+  transition: .3ms linear;
+  font-family: 'Anek Latin', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+button:hover{
+  background-color: rgb(139, 139, 216);
+}
+
+.brand-kit{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 60%;
+}
+
+.added-brand-kit-board{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 30vh;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
+  height: 100px;
+  background-color: rgb(190, 212, 190);
+  border-radius: 3px;
+}
+
+.color{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
+  height: 100px;
+  background-color: rgb(190, 212, 190);
+  border-radius: 3px;
+}
+
+.font{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
+  height: 100px;
+  background-color: rgb(190, 212, 190);
+  border-radius: 3px;
+}
+
+.add-brand-logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+  border: 0px;
+  border-radius: 3px;
+  margin-left: 9px;
+  margin: 10px 0px 10px 0px;
+  border: 1px solid #968f8f;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.add-brand-color{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+  border: 0px;
+  border-radius: 3px;
+  margin-left: 9px;
+  margin: 10px 0px 10px 0px;
+  border: 1px solid #968f8f;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.add-brand-kit-item-btn{
+  width: 90px;
+  height: 30px;
+  cursor: pointer;
+  background-color: rgb(81, 81, 228);
+  border: 0px;
+  border-radius: 3px;
+  margin-left: 9px;
+  margin: 10px 0px 10px 0px;
+  font-family: 'Anek Latin', sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+
+.plus{
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background: url(/images/plus.png);
+  background-size: contain;
+  cursor: pointer;
+}
+
+.empty-brand-kit-board{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-family: 'Anek Latin', sans-serif;
+}
+
+.users-brand-kit-board{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: #fff;
+  font-family: 'Anek Latin', sans-serif;
+}
+
+.brand-kit-collection{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 190px;
+  height: 190px;
+  border: 1px solid #fff;
+  margin-left: 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #968f8f;
+  transition: .3s linear;
+}
+
+.brand-kit-collection:hover{
+  background-color: #6d6565;
+}
+
+.delete-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 0px;
+  right: 0px;
+  background-color: #968f8f;
+  transition: .3s linear;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+}
+
+.delete-item:hover{
+  background-color: red;
+  font-size: 14px;
+}
